@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt</title>
+</head>
+  <style>
+    body{
+      background-image: url(sd.jpg);
+      color: white;
+      font-size: 120%;
+    }
+    table{
+      box-sizing: border-box;
+      margin: 0 auto;
+      position: static;
+      margin-top: 230px;
+      background-color: rgba(0, 0, 50, 0.6) ;
+      padding: 10px;
+      border-radius: 20px;
+    }
+    .col1{
+      text-align: center;
+      padding-right: 10px;
+      line-height: 150%;
+    }
+    .col2{
+      text-align: left;
+      line-height: 130%;
+    }
+    button{
+        background-color:#3BAF9F;
+        margin-left: 3px;
+        margin-top: 1px;
+        text-align:center;
+        border-radius:20px;
+        border:2px solid #366473;
+        padding:5px 15px;
+        outline:none;
+        color:white;
+        cursor:pointer;
+        width: 35%;
+        transition: width 0.3s;
+    }
+    button:hover{
+        background-color:#f8B800;
+        transition-duration: 0.3;
+        width: 40%;
+    } 
+    .box{
+      border-radius: 5px;
+      background-attachment: rgb(231, 232, 250);
+      transition: 0.3s;
+    }
+    .box:hover{
+      background-color: rgb(0,0,0,0.5);
+      color: lightgrey;
+    }
+    textarea{
+      border-radius: 5px;
+      resize: initial;
+      background-attachment: rgb(231, 232, 250);
+      transition: 0.3s;
+      
+    }
+    textarea:hover{
+      background-color: rgb(0,0,0,0.5);
+      color: lightgrey;
+    }
+    header{
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 5px;
+      top: 5px;
+      width: 100%;
+      color: #333;
+      font-family: sans-serif;
+      line-height: 1.5;
+      padding: 1rem 2rem;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);  
+      position: fixed;
+    }
+    select {
+      width: 30%;
+      font-size: 100%;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0;
+      background-color: #3BAF9F;
+      border: none;
+      border-bottom: 2px solid #366473;
+      border-radius: 7px;
+      color: white;
+      padding: 6px;
+      padding-right: 10px;
+      transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
+    }
+    select::-ms-expand {
+      display: none; 
+    }
+    select:hover,
+    select:focus {
+      color: white;
+      background-color: rgb(248, 184, 0, 0.7);
+      border-bottom-color: #DCDCDC;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 for="regform"><b>By T-shirts Online</b></h1>
+      <h2>Fill out the form below and click "Order Now"</h2>
+    </header>
+    <table>
+      <tr>
+        <td class="col1"><label for="onum">Search by order number:</label></td>
+        <td class="col2"><input type="text" id="onum" name="onum" class="box"><button class="button">Search</button></td>
+      </tr>
+      <tr>
+        <td class="col1"><label for="size">Chose your size:</label></td>
+        <td class="col2"><input type="radio" name="size" value="Small" id="size"> Small
+            <input type="radio" name="size" value="Medium" id="size"> Medium
+            <input type="radio" name="size" value="Large" id="size"> Large</td>
+      </tr>
+      <tr>
+        <td class="col1"><label for="colors">Choose your colour:</label></td>
+        <td class="col2">
+          <select id="colors">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>White</option>
+            <option>Black</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="col1"><label for="fname">Extra Items:</label></td>
+        <td class="col2">
+          <input class="check" type="checkbox" id="cap">
+          <label for="cap"> Cap</label><br>
+          <input class="check" type="checkbox" id="wristband">
+          <label for="wristband"> Wrist Band</label>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="5" class="col1"><label for="columnname">Deliver To:</label></td>
+        <td class="col2">
+          <label for="fname">First Name:</label><input type="text" id="fname" name="fname" class="box" style="float: right; padding-right: 40px;">
+        </td>
+      </tr>
+      <tr>
+        <td class="col2"><label for="lname">Last Name:</label><input type="text" id="lname" name="lname" class="box" style="float: right; padding-right: 40px;"></td>
+      </tr>
+      <tr>
+        <td class="col2"><label for="address1">Address1: </label><input type="text" id="address1" name="address1" class="box" style="float: right; padding-right: 40px;"></td>
+      </tr>
+      <tr>
+        <td class="col2"><label for="address2">Address2: </label><input type="text" id="address2" name="address2" class="box" style="float: right; padding-right: 40px;"></td>
+      </tr>
+      <tr>
+        <td class="col2"><label for="address3">Address3: </label><input type="text" id="address3" name="address3" class="box" style="float: right; padding-right: 40px;"></td>
+      </tr>
+      <tr>
+        <td class="col1"><label for="comments">Your Comments:</label></td>
+        <td class="col2"><textarea type="comments" id="comments" name="comments" rows="12", cols="40"></textarea></td>
+      </tr>
+      <tr><td></td><td class="col2"><button class="button">Order Now</button></td></tr>
+    </table>
+  </body>
+  </html>
