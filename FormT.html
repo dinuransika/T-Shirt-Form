@@ -46,6 +46,8 @@
     button:hover{
         background-color:#f8B800;
         transition-duration: 0.3;
+        letter-spacing: 1px;
+        font-weight: 600;
         width: 40%;
     } 
     .box{
@@ -108,6 +110,27 @@
       background-color: rgb(248, 184, 0, 0.7);
       border-bottom-color: #DCDCDC;
     }
+    ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;  
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
   </style>
   <body>
     <header>
